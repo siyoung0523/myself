@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- controls 없으면 재생 안됨 -->
+    <audio src="Kalimba.mp3" controls></audio>
+
+    <audio src="">
+        <!-- 똑같은 음악인데 mp3는 지원하고 ogg는 지원하지 않을 수가 있기에 PlanA, PlanB느낌 -->
+        <source src="Kalimba.mp3" type="audio/mp3">
+        <source src="Kalimba.ogg" type="audio/ogg">
+    </audio>
+
+    <video  poster="woman.jpg"
+            width="300px" height="300px"
+            src="Wildlife.mp4" controls></video>
+
+        <video  poster="woman.jpg"
+                width="300px" height="300px" controls muted autoplay>
+                <source src="Wildlife.mp4" type="video/mp4">
+                <source src="Wildlife.webm" type="video/webm">     
+        </video>
+</body>
+</html>

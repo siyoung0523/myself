@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:first-child{color: firebrick;}
+        /*제일 첫번째 태그이고 h1이여야만 적용을 함.*/
+        h1:last-child{background-color: goldenrod;}
+        /*제일 마지막 태그이고 h1이여야만 적용을함
+        결론 적으로 순서를 보고 태그를 봄
+        body에만 적용하는게 아니라 div각각에도 적용이 됨.*/
+    </style>
+</head>
+<body>
+    <p>이거 있으면 맨 윗줄 h1이 스타일 적용이 안됨</p>
+    <h1>awdadwadwd</h1>
+    <h2>QSadadw</h2>
+    <h1>123456</h1>
+    <div>
+    
+        <h1>asdad</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, aperiam!</p>
+        <p>asdawdad</p>
+    </div>
+    <h3>QSadadw</h3>
+    <h3>QSadadw</h3>
+    <h2>QSadadw</h2>
+    <h1>QSadadw</h1>
+</body>
+
+</html>

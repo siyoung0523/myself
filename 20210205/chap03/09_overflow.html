@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=checkbox]:checked+div
+        {
+            height:300px;
+        }
+        div
+        {
+            overflow: hidden;
+            width: 650px;
+            height: 0px;
+            /* 변환효과적용 */
+            -ms-transition-durtion:1s;
+            -webkit-transition-duration:1s;
+            -moz--transition-duration:1s;
+            transition-duration:1s;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <div>
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deleniti quam doloribus voluptate velit perspiciatis error dignissimos ratione eaque maxime beatae vel repudiandae quaerat incidunt atque officia esse alias, laborum aliquid explicabo inventore, eveniet perferendis? Accusamus explicabo molestiae, quisquam veritatis laborum nam sed itaque natus rem quae adipisci dolore culpa deleniti qui dolorem, quos optio id voluptatibus expedita sequi obcaecati. Quibusdam illum iure alias voluptatum doloremque explicabo error esse id, vero ut magnam, fuga dolorem amet dolor tempora quae omnis saepe assumenda minima. Ipsa et quis necessitatibus perferendis veniam illum blanditiis accusantium quam doloribus, libero sunt vel, quos exercitationem expedita?</p>
+    </div>
+</body>
+</html>
