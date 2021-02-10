@@ -27,3 +27,11 @@ p{
 *{
     font-family: 'Nanum Pen Script', cursive;
 }
+
+h1{
+    background-color: black;
+}
+
+h3{
+    background-color: rgba(149, 209, 149, 0.664);
+}
