@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        .red
+        {
+            background-color: tomato;
+            left:10px; top:10px;
+        }
+        .green
+        {
+            background-color: springgreen;
+            left:50px; top:50px;
+        }
+        .blue
+        {
+            background-color: skyblue;
+            left:90px; top:90px;
+        }
+        body>div /*body의 자손 div*/
+        {
+            width: 400px;
+            height: 100px; /*자식이 앱솔루트면 부모는 높이 있어야 그 영역이 잡힘*/
+            border:3px solid black;
+            position: relative;/*자식이 앱솔루트면 부모님 static이 아니어야함 (보통은 relative)*/
+            overflow: hidden;
+            /*부모태그보다 자식태그가 더 크면 짜름
+            단, 부모의 position이 static이면( 자식이 앱솔루트경우)
+            그 자식 태그는 (div를 부모로 인식하는게 아니라) body를 부모로 인식함.
+            */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+</body>
+</html>

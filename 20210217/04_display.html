@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span { background-color: aqua; }
+        div { background-color: red; }
+        p { background-color: pink; }
+        #box {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            }
+
+            p:nth-of-type(2)
+            {
+                /*display: none;*/
+
+                /*뭔가 빈자리가 있어보이게 함(해당 공간 내용만 투명하게)*/
+                visibility: hidden;
+            }
+    </style>
+</head>
+<body>
+    <span>최시영 짱</span>
+    <div id="box">
+        <span>Lorem ipsum dolor sit amet.</span>        
+    </div>
+    
+    <div id="box2">
+        <span>Lorem ipsum dolor sit.</span>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, odit.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
